@@ -4,6 +4,7 @@ using GoodHabits.Database;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GoodHabits.Database.Migrations
 {
     [DbContext(typeof(GoodHabitsDbContext))]
-    partial class GoodHabitsDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230425224401_AdditionalEntities")]
+    partial class AdditionalEntities
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
