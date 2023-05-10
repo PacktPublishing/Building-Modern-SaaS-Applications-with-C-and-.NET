@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoodHabits.Database", "Good
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoodHabits.UserService", "GoodHabits.UserService\GoodHabits.UserService.csproj", "{523D471A-5476-4DA9-BB8E-FF1A67197A25}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{B2EC2A24-8C9A-414A-BC45-1C9351F3761E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoodHabits.HabitService.Tests", "test\GoodHabits.HabitService.Tests\GoodHabits.HabitService.Tests.csproj", "{F9BACD06-EED8-4FCB-B41F-805CBFC7F6B6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +40,12 @@ Global
 		{523D471A-5476-4DA9-BB8E-FF1A67197A25}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{523D471A-5476-4DA9-BB8E-FF1A67197A25}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{523D471A-5476-4DA9-BB8E-FF1A67197A25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9BACD06-EED8-4FCB-B41F-805CBFC7F6B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9BACD06-EED8-4FCB-B41F-805CBFC7F6B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9BACD06-EED8-4FCB-B41F-805CBFC7F6B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9BACD06-EED8-4FCB-B41F-805CBFC7F6B6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F9BACD06-EED8-4FCB-B41F-805CBFC7F6B6} = {B2EC2A24-8C9A-414A-BC45-1C9351F3761E}
 	EndGlobalSection
 EndGlobal
