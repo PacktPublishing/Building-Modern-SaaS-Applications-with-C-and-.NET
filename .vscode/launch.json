@@ -2,6 +2,28 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "RunUserService",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build-user-service",
+            "program": "${workspaceFolder}/GoodHabits.UserService/bin/Debug/net7.0/GoodHabits.UserService.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/GoodHabits.UserService",
+            "stopAtEntry": false,
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "RunApiGateway",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build-api-gateway",
+            "program": "${workspaceFolder}/GoodHabits.ApiGateway/bin/Debug/net7.0/GoodHabits.ApiGateway.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/GoodHabits.ApiGateway",
+            "stopAtEntry": false,
+            "console": "integratedTerminal"
+        },
+        {
             "name": "RunClient",
             "type": "blazorwasm",
             "request": "launch",
@@ -23,11 +45,22 @@
     ],
     "compounds": [
         {
+            "name": "Run Server",
+            "configurations": [
+                "RunHabitService",
+                "RunUserService",
+                "RunApiGateway"
+            ]
+        },
+        {
             "name": "Run All",
             "configurations": [
                 "RunHabitService",
-                "RunClient"
+                "RunClient",
+                "RunUserService",
+                "RunApiGateway"
             ]
         }
     ]
+
 }
