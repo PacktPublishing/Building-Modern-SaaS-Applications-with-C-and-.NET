@@ -1,0 +1,21 @@
+[
+  {
+    "_id": "cd2af0a6-6bdf-4fca-ae60-7deda324cc2b",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:5100/api/Habits",
+    "url": "http://localhost:5100/api/Habits",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2023-04-25T22:27:47.163Z",
+    "modified": "2023-04-25T22:28:16.338Z",
+    "headers": [
+      {
+        "name": "tenant",
+        "value": "CloudSphere"
+      }
+    ],
+    "params": [],
+    "tests": []
+  }
+]
