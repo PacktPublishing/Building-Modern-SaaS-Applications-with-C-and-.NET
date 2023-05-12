@@ -29,7 +29,7 @@
             "request": "launch",
             "preLaunchTask": "build-client",
             "cwd": "${workspaceFolder}/GoodHabits.Client",
-            "url": "https://localhost:5900"
+            "url": "http://localhost:5900"
         },
         {
             "name": "RunHabitService",
