@@ -1,0 +1,55 @@
+{
+    "GlobalConfiguration": {
+      "BaseUrl": "http://localhost:5900"
+    },
+    "Routes": [
+      {
+        "UpstreamPathTemplate": "/gateway/habits",
+        "UpstreamHttpMethod": [ "Get", "Post" ],
+        "DownstreamPathTemplate": "/api/habits",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          {
+            "Host": "localhost",
+            "Port": 5100
+          }
+        ],
+        "RateLimitOptions": {
+          "EnableRateLimiting": true,
+          "Period": "10s",
+          "PeriodTimespan": 10,
+          "Limit": 3
+        }
+      },
+      {
+        "UpstreamPathTemplate": "/gateway/habits/{id}",
+        "UpstreamHttpMethod": [ "Get", "Delete", "Put", "Patch" ],
+        "DownstreamPathTemplate": "/api/habits/{id}",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          {
+            "Host": "localhost",
+            "Port": 5100
+          }
+        ],
+        "RateLimitOptions": {
+          "EnableRateLimiting": true,
+          "Period": "10s",
+          "PeriodTimespan": 10,
+          "Limit": 1
+        }
+      },
+      {
+        "UpstreamPathTemplate": "/gateway/users",
+        "UpstreamHttpMethod": [ "Get" ],
+        "DownstreamPathTemplate": "/api/users",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          {
+            "Host": "localhost",
+            "Port": 5200
+          }
+        ]
+      }
+    ]
+  }

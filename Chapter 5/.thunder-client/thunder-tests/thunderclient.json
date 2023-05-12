@@ -1,0 +1,150 @@
+[
+  {
+    "_id": "5517872d-ad18-4714-becc-115c4aa4652d",
+    "colId": "b64fd9c0-1e21-4114-be2e-6e4eb0f9bd65",
+    "containerId": "",
+    "name": "GET Habits",
+    "url": "http://localhost:5100/api/habits",
+    "method": "GET",
+    "sortNum": 10000,
+    "created": "2023-04-27T22:23:37.172Z",
+    "modified": "2023-04-27T22:25:20.682Z",
+    "headers": [
+      {
+        "name": "tenant",
+        "value": "CloudSphere"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "41890e35-f543-4179-8286-457c4155813e",
+    "colId": "b64fd9c0-1e21-4114-be2e-6e4eb0f9bd65",
+    "containerId": "",
+    "name": "POST Habit",
+    "url": "http://localhost:5100/api/habits",
+    "method": "POST",
+    "sortNum": 20000,
+    "created": "2023-04-27T22:27:38.462Z",
+    "modified": "2023-04-28T22:22:05.910Z",
+    "headers": [
+      {
+        "name": "tenant",
+        "value": "CloudSphere"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"name\": \"Go to the gym\",\n  \"description\": \"Get strong\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "6acbcb90-2103-4e9c-9794-b52aba32d247",
+    "colId": "b64fd9c0-1e21-4114-be2e-6e4eb0f9bd65",
+    "containerId": "",
+    "name": "GET Habit by id",
+    "url": "http://localhost:5100/api/habits/109",
+    "method": "GET",
+    "sortNum": 15000,
+    "created": "2023-04-28T21:42:17.091Z",
+    "modified": "2023-04-28T22:06:59.959Z",
+    "headers": [
+      {
+        "name": "tenant",
+        "value": "CloudSphere"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "a91ad6cc-b4d1-4abe-8078-12efa0989a58",
+    "colId": "b64fd9c0-1e21-4114-be2e-6e4eb0f9bd65",
+    "containerId": "",
+    "name": "PUT Habit",
+    "url": "http://localhost:5100/api/habits/103",
+    "method": "PUT",
+    "sortNum": 17500,
+    "created": "2023-04-28T21:44:01.884Z",
+    "modified": "2023-04-28T21:44:35.366Z",
+    "headers": [
+      {
+        "name": "tenant",
+        "value": "CloudSphere"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n    \"name\":\"Ch ch ch changes\",\n    \"description\":\"Changed some text\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "f5f6b1b9-b94a-4123-ad04-6ca3e38bdb60",
+    "colId": "b64fd9c0-1e21-4114-be2e-6e4eb0f9bd65",
+    "containerId": "",
+    "name": "PATCH Habit",
+    "url": "http://localhost:5100/api/habits/103",
+    "method": "PATCH",
+    "sortNum": 18750,
+    "created": "2023-04-28T21:49:40.692Z",
+    "modified": "2023-04-28T21:55:00.647Z",
+    "headers": [
+      {
+        "name": "tenant",
+        "value": "CloudSphere"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "[\n\t{\n\t\t\"op\": \"replace\",\n\t\t\"path\": \"/Name\",\n\t\t\"value\": \"Yet Another New Name\"\n\t}\n]",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "c40ce7e6-4ce9-40ef-b7b6-fa8919fb87be",
+    "colId": "b64fd9c0-1e21-4114-be2e-6e4eb0f9bd65",
+    "containerId": "",
+    "name": "DELETE Habit",
+    "url": "http://localhost:5100/api/habits/1103",
+    "method": "DELETE",
+    "sortNum": 16250,
+    "created": "2023-04-28T22:31:03.312Z",
+    "modified": "2023-04-28T22:31:42.616Z",
+    "headers": [
+      {
+        "name": "tenant",
+        "value": "CloudSphere"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "2dd55b12-f6ec-4b94-9325-c397e995e5cf",
+    "colId": "b64fd9c0-1e21-4114-be2e-6e4eb0f9bd65",
+    "containerId": "",
+    "name": "GET Version",
+    "url": "http://localhost:5100/api/v2/Habits/version",
+    "method": "GET",
+    "sortNum": 30000,
+    "created": "2023-04-29T22:37:43.329Z",
+    "modified": "2023-04-29T22:40:11.121Z",
+    "headers": [
+      {
+        "name": "tenant",
+        "value": "CloudSphere"
+      }
+    ],
+    "params": [],
+    "tests": []
+  }
+]

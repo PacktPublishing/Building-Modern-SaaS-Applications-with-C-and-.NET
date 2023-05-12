@@ -1,0 +1,57 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build-user-service",
+            "type": "shell",
+            "command": "dotnet",
+            "args": [
+                "build",
+                "${workspaceFolder}/GoodHabits.UserService/GoodHabits.UserService.csproj"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "build-api-gateway",
+            "type": "shell",
+            "command": "dotnet",
+            "args": [
+                "build",
+                "${workspaceFolder}/GoodHabits.ApiGateway/GoodHabits.ApiGateway.csproj"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "build-client",
+            "type": "shell",
+            "command": "dotnet",
+            "args": [
+                "build",
+                "${workspaceFolder}/GoodHabits.Client/GoodHabits.Client.csproj"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "build-habit-service",
+            "type": "shell",
+            "command": "dotnet",
+            "args": [
+                "build",
+                "${workspaceFolder}/GoodHabits.HabitService/GoodHabits.HabitService.csproj"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+    ]
+}
